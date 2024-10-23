@@ -1,0 +1,345 @@
+body {
+    background-image: url(''); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image in place even when scrolling */
+    color: #fff; /* Text color to contrast with the background */
+}
+
+/* Full-screen background image */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/Light House.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white; /* Set default text color */
+}
+
+
+
+/* Floating results popup */
+.results-popup {
+    position: fixed; /* Fixed position to float on the right */
+    top: 50%; /* Center vertically */
+    right: 20px; /* Space from the right edge */
+    transform: translateY(-50%); /* Center the popup vertically */
+    width: 300px; /* Width of the popup */
+    max-height: 80%; /* Limit the height */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the popup */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.result-item {
+    margin-bottom: 15px; /* Spacing between result items */
+    color: #fff; /* Text color for result items */
+}
+
+.result-item h3 {
+    margin: 0; /* Remove default margin */
+}
+
+.result-item img {
+    max-width: 100%; /* Responsive images */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+/* Styling for other sections like contact form */
+.contact-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    border: 2px solid black; /* Black stroke outline */
+    border-radius: 5px;
+    color: black; /* Ensure text is readable */
+}
+
+/* General button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+
+
+
+/* Navigation */
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #008080;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Hero Section */
+.home {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: #fafafa;
+    
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #f7f3f3;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.social-media-icons i {
+    font-size: 20px;
+}
+
+/* About Us Section */
+.about-us {
+    background-image: url("https://www.travelbloom.com/images/about-us-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.our-team {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    background-color: #d3d3d3;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.team-member img:hover {
+    transform: scale(1.05);
+}
+
+.team-member h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    position: relative;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* 30% transparency */
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    color: #ffffff; /* Ensure text is readable */
+}
+
+
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Ensures the fields take up full width of the form */
+    padding: 10px; /* Adds padding inside the fields */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+}
+
+
+.contact-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-form button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50; /* Add a shadow for focus state */
+}
+
+
+.success-message {
+    color: green; /* Color for success message */
+    margin-top: 10px; /* Spacing above the message */
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .our-team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        margin-bottom: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .home h1 {
+        font-size: 36px;
+    }
+    
+    .home p {
+        font-size: 16px;
+    }
+
+    .social-media-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
